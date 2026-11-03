@@ -1,21 +1,16 @@
-package programming_practice;
-
+package string;
 
 public class Practice {
 
 	public static void main(String[] args) {
-		int num=3;
-		for(int i=1;i<=num;i++) {
-			int n=1;int m=i;
-			for(int j=1;j<2*num;j++) {
-				if(i+j>num && j-i<num) {
-					System.out.print(m+++"");
-				}else {
-					System.out.print("  ");
-				}
-			}
-			System.out.println();
-		}
+		// TODO Auto-generated method stub
+		String s1=new String("Java");
+		String s2=new String("Program");
+		System.out.println(s1==s2);
+		System.out.println(s1.equals(s2));
+		String s3=new String("Java");
+		System.out.println(s1==s3);
+		System.out.println(s1.equals(s3));
 	}
-}
 
+}

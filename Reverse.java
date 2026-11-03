@@ -1,22 +1,15 @@
-package programming_practice;
-
-import java.util.Scanner;
+package string;
 
 public class Reverse {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter a number");
-		int num=sc.nextInt();
-		int rev=0;
-		while(num!=0) {
-			int rem=num%10;
-			rev=rev*10+rem;
-			num=num/10;
+		String s="Java";
+		String res="";
+		for(int i=s.length()-1;i>=0;i--) {
+			res+=s.charAt(i);
 		}
-		System.out.println("Reverse : "+rev);
-
+		System.out.println(res);
 	}
 
 }
